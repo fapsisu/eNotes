@@ -219,7 +219,7 @@ public class NotesListBaseActivity extends Activity implements NavigationDrawerF
 	private class MyListNoteAdapter<Note> extends ArrayAdapter<Note> {
 		private class ViewHolder {
 			private TextView tvNoteTitleItem;
-			private ImageView ivNoteRecyclerIcoItem;
+			private ImageView ivNoteOtherIcoItem;
 			private ImageView ivNoteEncryptIcoItem;
 			private TextView tvNoteDateTimeItem;
 			private LinearLayout llNoteItem;
@@ -239,7 +239,7 @@ public class NotesListBaseActivity extends Activity implements NavigationDrawerF
 				viewHolder.llNoteItem = (LinearLayout) convertView.findViewById(R.id.llNoteItem);	
 				viewHolder.tvNoteTitleItem = (TextView) convertView.findViewById(R.id.tvNoteTitleItem);
 				viewHolder.subllNI = (LinearLayout) convertView.findViewById(R.id.subllNI);
-				viewHolder.ivNoteRecyclerIcoItem = (ImageView) convertView.findViewById(R.id.ivNoteRecyclerIcoItem);
+				viewHolder.ivNoteOtherIcoItem = (ImageView) convertView.findViewById(R.id.ivNoteOtherIcoItem);
 				viewHolder.ivNoteEncryptIcoItem = (ImageView) convertView.findViewById(R.id.ivNoteEncryptIcoItem);
 				viewHolder.tvNoteDateTimeItem = (TextView) convertView.findViewById(R.id.tvNoteDateTimeItem);
 					
@@ -256,14 +256,14 @@ public class NotesListBaseActivity extends Activity implements NavigationDrawerF
 				viewHolder.subllNI.setBackgroundColor(colors1[((su.fapsi.enotes.Note) item).getColorNoteIndex()]);				
 				viewHolder.tvNoteTitleItem.setText(((su.fapsi.enotes.Note) item).getTitleN().toString());
 				if (((su.fapsi.enotes.Note) item).getTypeNote().equals(Notes.NOTETYPE_RECYCLE)) {
-					viewHolder.ivNoteRecyclerIcoItem.setImageBitmap(BitmapFactory.decodeResource(getResources(), R.drawable.recycle_ico));		
+					viewHolder.ivNoteOtherIcoItem.setImageBitmap(BitmapFactory.decodeResource(getResources(), R.drawable.recycle_ico));		
 				} else {
-					viewHolder.ivNoteRecyclerIcoItem.setImageBitmap(null);
+					viewHolder.ivNoteOtherIcoItem.setImageBitmap(null);
 				}
 				if (((su.fapsi.enotes.Note) item).getRcReminderN()>Preferences.START_RCR) {
-					viewHolder.ivNoteRecyclerIcoItem.setImageBitmap(BitmapFactory.decodeResource(getResources(), R.drawable.alarm_ico));		
+					viewHolder.ivNoteOtherIcoItem.setImageBitmap(BitmapFactory.decodeResource(getResources(), R.drawable.alarm_ico));		
 				} else {
-					viewHolder.ivNoteRecyclerIcoItem.setImageBitmap(null);
+					viewHolder.ivNoteOtherIcoItem.setImageBitmap(null);
 				}
 				if (((su.fapsi.enotes.Note) item).getEncryptStatusN()) {
 					viewHolder.ivNoteEncryptIcoItem.setImageBitmap(BitmapFactory.decodeResource(getResources(), R.drawable.padlock_ico));
