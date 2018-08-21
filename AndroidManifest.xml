@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:installLocation="internalOnly"
+    package="su.fapsi.enotes"
+    android:versionCode="1"
+    android:versionName="@string/app_version" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="17" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/note_app_ico"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".NotesListActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ArchiveNotesListActivity"
+            android:label="@string/archive_activity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".RecycleNotesListActivity"
+            android:label="@string/recycle_activity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".SearchActivity"
+            android:label="@string/search_activity"
+            android:screenOrientation="portrait"
+            windowSoftInputMode="stateAlwaysVisible"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name=".NoteEditActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/settings_activity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".SetMasterPasswordActivity"
+            android:label="@string/master_password"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".SetReminderActivity"
+            android:label="Установка напоминания"
+            android:screenOrientation="portrait" >
+        </activity>
+        <receiver android:name=".NotificationReceiver"></receiver>
+        <receiver android:name=".BootReceiver">
+            <intent-filter>
+            	<action android:name="android.intent.action.BOOT_COMPLETED"></action>
+        	</intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

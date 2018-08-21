@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">eNotes</string>
+    <string name="app_version">1.7</string>
+    <string name="notes_activity">Notes</string>
+    <string name="archive_activity">Archive</string>
+    <string name="recycle_activity">Recycle Bin</string>
+    <string name="search_activity">Search</string>
+    <string name="settings_activity">Settings</string>
+    <string name="about">About</string>
+    
+    <string name="label_app_version">App version</string>
+    <string name="label_app_developer">(c) FAPSI 2018</string>
+    <string name="privacy_policiy">Privacy policy</string>
+    
+    <string name="btnOk">Ok</string>
+    <string name="btnCancel">Cancel</string>
+    <string name="msg_not_access_SD">SD card not available</string>
+    <string name="msg_save">Save</string>
+    <string name="msg_search">Search</string>
+    
+    <string name="cntx_to_archive">To archive</string>
+	<string name="cntx_to_recycle">To recycle</string>
+	<string name="cntx_save_as_text">Save as text</string>
+	<string name="cntx_crypt">En(de)crypt</string>
+    <string name="cntx_reminder">Reminder</string>
+    <string name="cntx_unpack">Unpuck</string>
+    <string name="cntx_recovery">Recovery</string>
+    <string name="cntx_delete">Permanently delete</string>
+    <string name="title_to_archive">Archiving a note</string>
+    <string name="msg_to_archive">Are you sure you want to archive the note?</string>
+    <string name="title_to_recycle">Deleting a note</string>
+    <string name="msg_to_recycle">Are you sure you want to send the note to the trash?</string>
+    <string name="title_note_delete">Deleting a note permanently</string>
+    <string name="msg_note_delete">Do you really want to permanently delete the note?</string>
+    <string name="title_recycle_clear">Cleaning the Recycle Bin</string>
+    <string name="msg_recycle_clear">Are you sure you want to empty the trash?</string>
+    
+    <string name="msg_note_export_done">Note saved</string>
+    <string name="msg_wrong_export_encrypt_note">You can not save an encrypted note</string>
+    
+    <string name="msg_dblcl_4_edit">Double tap to edit</string>
+    <string name="msg_note_added">Note added</string>
+    <string name="msg_note_updated">Note has been updated</string>
+    
+    <string name="msg_wrong_password">Incorrect password</string>
+    <string name="master_password">Master Password</string>
+    <string name="btn_set_master_password">Set password</string>
+    <string name="btn_update_master_password">Update password</string>
+    <string name="current_master_password">Current Master Password</string>
+    <string name="new_master_password">New master password</string>
+    <string name="about_master_password">Master password is required for encryption and decryption of notes</string>
+    <string name="confirmed_master_password">Retype Master Password</string>
+    <string name="reset_master_password">Reset the password</string>
+    <string name="msg_wrong_current_master_password">Incorrect current password entered</string>
+    <string name="msg_unconfirmed_master_password">Password and password confirmation do not match</string>
+    <string name="msg_length_master_password">Password must contain more than 6 characters</string>
+    <string name="msg_set_master_password">Master Password is set</string>
+    <string name="msg_update_master_password">Master Password updated</string>
+    <string name="msg_reset_master_password">Master Password Reset</string>
+	<string name="title_reset_master_password">Master Password Reset</string>
+	<string name="attention_message_reset_master_password">Resetting the master password will delete all encrypted notes.\nAre you sure you want to reset the master password?</string>
+	
+	<string name="reminder_note_title">Note:</string>
+	<string name="reminder_date_title">Reminder Date:</string>
+	<string name="btn_set_reminder">Set reminder</string>
+	<string name="btn_update_reminder">Update Reminder</string>
+	<string name="btn_reset_reminder">Reset reminder</string>
+	<string name="msg_set_reminder">Reminder set</string>
+	<string name="msg_update_reminder">Reminder updated</string>
+	<string name="msg_reset_reminder">Reminder cleared</string>
+	<string name="msg_wrong_reminder_date">You can not set the time and date of the reminder of the current</string>
+	
+	<string name="stngs_general_title">General</string>
+	<string name="stngs_default_note_color">Default note color</string>
+	<string name="stngs_note_default_method_sort">Sort default notes</string>
+	<string name="stngs_reminder_title">Reminders</string>
+	<string name="stngs_vibrate_when_reminded">Vibrate when reminded</string>
+	<string name="stngs_security_title">Security</string>
+	
+    <string name="sort_date_cr_desk">Sort by creation date ↓</string>
+    <string name="sort_date_cr_ask">Sort by creation date ↑</string>
+    <string name="sort_date_ed_desk">Sort by modification date ↓</string>
+    <string name="sort_date_ed_ask">Sort by modification date ↑</string>
+    <string name="sort_az_desk">Sort alphabetically ↓</string>
+    <string name="sort_az_ask">Sort alphabetically ↑</string>
+    <string name="sort_date_rem_desk">Sort by reminder date ↓</string>
+    <string name="sort_date_rem_ask">Sort by reminder date ↑</string>
+    <string name="sort_color">Sort by color</string>
+    <string name="sort_date_arch_desk">Sort by archive date ↓</string>
+    <string name="sort_date_arch_ask">Sort by archive date ↑</string>
+    <string name="sort_date_recyc_desk">Sort by deletion date ↓</string>
+    <string name="sort_date_recyc_ask">Sort by deletion date ↑</string>
+    
+    <string-array name="sortBaseNotesMethods">
+		<item>Sort by creation date ↓</item>
+		<item>Sort by creation date ↑</item>
+		<item>Sort by modification date ↓</item>
+		<item>Sort by modification date ↑</item>
+		<item>Sort alphabetically ↓</item>
+		<item>Sort alphabetically ↑</item>
+		<item>Sort by reminder date ↓</item>
+		<item>Sort by reminder date ↑</item>
+		<item>Sort by color</item>
+	</string-array>
+    
+    <string-array name="sortArchiveNotesMethods">
+		<item>Sort by creation date ↓</item>
+		<item>Sort by creation date ↑</item>
+		<item>Sort by modification date ↓</item>
+		<item>Sort by modification date ↑</item>
+		<item>Sort alphabetically ↓</item>
+		<item>Sort alphabetically ↑</item>
+		<item>Sort by archive date ↓</item>
+		<item>Sort by archive date ↑</item>
+		<item>Sort by color</item>
+    </string-array>
+    
+    <string-array name="sortRecycleNotesMethods">
+		<item>Sort by creation date ↓</item>
+		<item>Sort by creation date ↑</item>
+		<item>Sort by deletion date ↓</item>
+		<item>Sort by deletion date ↑</item>
+    </string-array>
+    
+
+</resources>

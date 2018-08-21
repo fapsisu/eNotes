@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/settings_drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/base_padding"
+    tools:context="su.fapsi.enotes.SettingsActivity" >
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+        
+        <LinearLayout
+            android:id="@+id/llGeneral"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:orientation="vertical" >
+        	
+            <TextView
+				android:layout_width="match_parent"
+        		android:layout_height="wrap_content"
+        		android:text="@string/stngs_general_title"
+        		android:textSize="@dimen/lager_title"
+				android:layout_margin="@dimen/base_padding"
+				android:gravity="center_vertical" />
+
+        	<LinearLayout
+            	android:layout_width="match_parent"
+            	android:layout_height="wrap_content"
+            	android:orientation="horizontal"
+            	android:layout_marginLeft="@dimen/base_padding"
+            	android:layout_marginRight="@dimen/base_padding" >
+                       
+				<TextView
+					android:layout_width="0dp"
+        			android:layout_weight="0.85"
+        			android:layout_height="wrap_content"
+        			android:text="@string/stngs_default_note_color"
+        			android:textSize="@dimen/base_text"
+					android:layout_marginLeft="@dimen/base_padding"
+            		android:layout_marginRight="@dimen/base_padding"
+            		android:layout_gravity="center_vertical"
+					android:gravity="center_vertical" />
+			
+				<LinearLayout
+			    	android:layout_width="0dp"
+        			android:layout_weight="0.15"
+        			android:layout_height="wrap_content"
+        			android:orientation="horizontal" >
+			    
+			    	<Button
+			    		android:id="@+id/btnCNDefault"
+			    		android:layout_width="24dp"
+        				android:layout_height="24dp"
+        				android:gravity="center_horizontal|center_vertical" />
+			    
+				</LinearLayout>
+						
+        	</LinearLayout>
+        
+        	<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/stngs_note_default_method_sort"
+				android:textSize="@dimen/base_text"
+				android:layout_marginLeft="@dimen/base_padding"
+				android:layout_marginRight="@dimen/base_padding"
+				android:gravity="center_vertical" />
+
+        	<Spinner
+            	android:id="@+id/spSortMethodDefault"
+            	android:layout_width="match_parent"
+            	android:layout_height="wrap_content"
+            	android:layout_marginLeft="@dimen/base_padding"
+            	android:layout_marginRight="@dimen/base_padding" />
+        	
+        </LinearLayout>
+        
+        
+		<LinearLayout
+			android:id="@+id/llNotification"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_marginTop="20dp"
+        	android:orientation="vertical" >
+             
+			<TextView
+				android:layout_width="match_parent"
+        		android:layout_height="wrap_content"
+        		android:text="@string/stngs_reminder_title"
+        		android:textSize="@dimen/lager_title"        	
+				android:layout_marginLeft="@dimen/base_padding"
+            	android:layout_marginRight="@dimen/base_padding"
+            	android:layout_marginBottom="@dimen/base_padding"
+				android:gravity="center_vertical" />
+                
+        	<CheckBox
+				android:id="@+id/cbNotificationVibrate"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+ 				android:text="@string/stngs_vibrate_when_reminded"
+ 				android:textSize="@dimen/base_text"
+ 				android:button="@null"
+ 				android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+				android:layout_marginLeft="@dimen/base_padding"
+            	android:layout_marginRight="@dimen/base_padding" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/llSecurity"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_marginTop="20dp"
+        	android:orientation="vertical" >
+        	
+            <TextView
+				android:layout_width="match_parent"
+        		android:layout_height="wrap_content"
+        		android:text="@string/stngs_security_title"
+        		android:textSize="@dimen/lager_title"
+				android:layout_marginLeft="@dimen/base_padding"
+            	android:layout_marginRight="@dimen/base_padding"
+            	android:layout_marginBottom="@dimen/base_padding"
+				android:gravity="center_vertical" />
+        
+			<Button
+            	android:id="@+id/masterPasswordSettings"
+            	android:layout_width="match_parent"
+        		android:layout_height="wrap_content"
+        		android:text="@string/master_password"
+        		android:textSize="@dimen/base_text"
+        		android:layout_marginLeft="@dimen/base_padding"
+            	android:layout_marginRight="@dimen/base_padding" />
+            
+		</LinearLayout>
+         
+        <LinearLayout
+            android:id="@+id/llAbout"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_marginTop="20dp"
+        	android:orientation="vertical" >
+        	
+            <TextView
+				android:layout_width="match_parent"
+        		android:layout_height="wrap_content"
+        		android:text="@string/about"
+        		android:textSize="@dimen/lager_title"
+				android:layout_marginLeft="@dimen/base_padding"
+            	android:layout_marginRight="@dimen/base_padding"
+            	android:layout_marginBottom="@dimen/base_padding"
+				android:gravity="center_vertical" />
+            
+            <TextView
+                android:id="@+id/tvAppVersion"
+				android:layout_width="match_parent"
+        		android:layout_height="wrap_content"
+        		android:textSize="@dimen/base_text"
+				android:layout_marginLeft="@dimen/base_padding"
+            	android:layout_marginRight="@dimen/base_padding"
+            	android:layout_marginBottom="@dimen/base_padding"
+				android:gravity="center_vertical" />
+            
+            <TextView
+                android:id="@+id/tvDeveloper"
+				android:layout_width="match_parent"
+        		android:layout_height="wrap_content"
+        		android:textSize="@dimen/base_text"
+				android:layout_marginLeft="@dimen/base_padding"
+            	android:layout_marginRight="@dimen/base_padding"
+            	android:layout_marginBottom="@dimen/base_padding"
+				android:gravity="center_vertical"
+				android:text="@string/label_app_developer" />
+            
+            <TextView
+                android:id="@+id/tvPrivacyPolicy"
+				android:layout_width="match_parent"
+        		android:layout_height="wrap_content"
+        		android:autoLink="web"
+        		android:textSize="11sp"
+				android:layout_marginLeft="@dimen/base_padding"
+            	android:layout_marginRight="@dimen/base_padding"
+            	android:layout_marginBottom="@dimen/base_padding"
+				android:gravity="center_vertical" />
+            
+		</LinearLayout>
+        
+        
+           
+    </LinearLayout>
+       
+    <fragment
+		android:id="@+id/settings_navigation_drawer"
+		android:name="su.fapsi.enotes.NavigationDrawerFragment"
+		android:layout_width="@dimen/menu_frame_width"
+		android:layout_height="match_parent"
+		android:layout_gravity="start"
+		tools:layout="@layout/fragment_navigation_drawer" />
+ 
+</android.support.v4.widget.DrawerLayout>

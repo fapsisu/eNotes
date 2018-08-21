@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/llSearch"
+	android:layout_width="match_parent"
+	android:padding="2dp"
+	android:layout_height="wrap_content"
+	android:orientation="horizontal">
+
+    <EditText
+        android:id="@+id/etSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cursorVisible="true"
+        android:hint="@string/msg_search"
+        android:singleLine="true"
+        android:textColor="#ffffff"
+        android:textColorHighlight="#909090" >
+
+        <requestFocus/>
+	</EditText>         
+</LinearLayout>

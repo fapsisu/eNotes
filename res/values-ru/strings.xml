@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="notes_activity">Заметки</string>
+    <string name="archive_activity">Архив</string>
+    <string name="recycle_activity">Корзина</string>
+    <string name="search_activity">Поиск</string>
+    <string name="settings_activity">Настройки</string>
+    <string name="about">О приложении</string>
+    
+    <string name="label_app_version">Версия приложения</string>
+    <string name="privacy_policiy">Уведомление о приватности</string>
+    
+    <string name="btnOk">Ок</string>
+    <string name="btnCancel">Отменить</string>
+    <string name="msg_not_access_SD">SD-карта не доступна</string>
+    <string name="msg_save">Сохранить</string>
+    <string name="msg_search">Поиск</string>
+    
+    <string name="cntx_to_archive">Архивировать</string>
+	<string name="cntx_to_recycle">Отправить в корзину</string>
+	<string name="cntx_save_as_text">Сохранить как текст</string>
+	<string name="cntx_crypt">За(рас)шифровать</string>
+    <string name="cntx_reminder">Напоминание</string>
+    <string name="cntx_unpack">Распаковать</string>
+    <string name="cntx_recovery">Восстановить</string>
+    <string name="cntx_delete">Удалить навсегда</string>
+    <string name="title_to_archive">Архивирование заметки</string>
+    <string name="msg_to_archive">Вы действительно хотите архивировать заметку?</string>
+    <string name="title_to_recycle">Удаление заметки</string>
+    <string name="msg_to_recycle">Вы действительно хотите отправить заметку в корзину?</string>
+    <string name="title_note_delete">Удаление заметки навсегда</string>
+    <string name="msg_note_delete">Вы действительно хотите безвозвратно удалить заметку?</string>
+    <string name="title_recycle_clear">Очищение корзины</string>
+    <string name="msg_recycle_clear">Вы действительно хотите очистить корзину?</string>
+    
+    <string name="msg_note_export_done">Заметка сохранена</string>
+    <string name="msg_wrong_export_encrypt_note">Зашифрованную заметку сохранить невозможно</string>
+    
+    <string name="msg_dblcl_4_edit">Нажмите дважды для редактирования</string>
+    <string name="msg_note_added">Заметка добавлена</string>
+    <string name="msg_note_updated">Заметка обновлена</string>
+    
+    <string name="msg_wrong_password">Неверный пароль</string>
+    <string name="master_password">Мастер-пароль</string>
+    <string name="btn_set_master_password">Установить пароль</string>
+    <string name="btn_update_master_password">Обновить пароль</string>
+    <string name="current_master_password">Текущий мастер-пароль</string>
+    <string name="new_master_password">Новый мастер-пароль</string>
+    <string name="about_master_password">Мастер-пароль необходим для шифрования и дешифровки заметок</string>
+    <string name="confirmed_master_password">Повторить мастер-пароль</string>
+    <string name="reset_master_password">Сбросить пароль</string>
+    <string name="msg_wrong_current_master_password">Введён неверный текущий пароль</string>
+    <string name="msg_unconfirmed_master_password">Пароль и подтверждение пароля не совпадают</string>
+    <string name="msg_length_master_password">Пароль должен содержать более 6 символов</string>
+    <string name="msg_set_master_password">Мастер-пароль установлен</string>
+    <string name="msg_update_master_password">Мастер-пароль обновлён</string>
+    <string name="msg_reset_master_password">Мастер-пароль сброшен</string>
+	<string name="title_reset_master_password">Сброс мастер-пароля</string>
+	<string name="attention_message_reset_master_password">Сброс мастер-пароля приведёт к удалению всех зашифрованных заметок.\nВы действительной хотите сбросить мастер-пароль?</string>
+	
+	<string name="reminder_note_title">Заметка:</string>
+	<string name="reminder_date_title">Дата напоминания:</string>
+	<string name="btn_set_reminder">Установить напоминание</string>
+	<string name="btn_update_reminder">Обновить напоминание</string>
+	<string name="btn_reset_reminder">Сбросить напоминание</string>
+	<string name="msg_set_reminder">Напоминание  установлено</string>
+	<string name="msg_update_reminder">Напоминание обновлено</string>
+	<string name="msg_reset_reminder">Напоминание сброшено</string>
+	<string name="msg_wrong_reminder_date">Нельзя установить время и дату напоминания ранее текущих</string>
+	
+	<string name="stngs_general_title">Основные</string>
+	<string name="stngs_default_note_color">Цвет заметок по умолчанию</string>
+	<string name="stngs_note_default_method_sort">Сортировка заметок по умолчанию</string>
+	<string name="stngs_reminder_title">Напоминания</string>
+	<string name="stngs_vibrate_when_reminded">Вибросигнал при напоминании</string>
+	<string name="stngs_security_title">Безопасность</string>
+	
+    <string name="sort_date_cr_desk">Сортировать по дате создания ↓</string>
+    <string name="sort_date_cr_ask">Сортировать по дате создания ↑</string>
+    <string name="sort_date_ed_desk">Сортировать по дате изменения ↓</string>
+    <string name="sort_date_ed_ask">Сортировать по дате изменения ↑</string>
+    <string name="sort_az_desk">Сортировать по алфавиту ↓</string>
+    <string name="sort_az_ask">Сортировать по алфавиту ↑</string>
+    <string name="sort_date_rem_desk">Сортировать по дате напоминания ↓</string>
+    <string name="sort_date_rem_ask">Сортировать по дате напоминания ↑</string>
+    <string name="sort_color">Сортировать по цвету</string>
+    <string name="sort_date_arch_desk">Сортировать по дате архивирования ↓</string>
+    <string name="sort_date_arch_ask">Сортировать по дате архивирования ↑</string>
+    <string name="sort_date_recyc_desk">Сортировать по дате удаления ↓</string>
+    <string name="sort_date_recyc_ask">Сортировать по дате удаления ↑</string>
+    
+    <string-array name="sortBaseNotesMethods">
+		<item>Сортировать по дате создания ↓</item>
+		<item>Сортировать по дате создания ↑</item>
+		<item>Сортировать по дате изменения ↓</item>
+		<item>Сортировать по дате изменения ↑</item>
+		<item>Сортировать по алфавиту ↓</item>
+		<item>Сортировать по алфавиту ↑</item>
+		<item>Сортировать по дате напоминания ↓</item>
+		<item>Сортировать по дате напоминания ↑</item>
+		<item>Сортировать по цвету</item>
+	</string-array>
+    
+    <string-array name="sortArchiveNotesMethods">
+		<item>Сортировать по дате создания ↓</item>
+		<item>Сортировать по дате создания ↑</item>
+		<item>Сортировать по дате изменения ↓</item>
+		<item>Сортировать по дате изменения ↑</item>
+		<item>Сортировать по алфавиту ↓</item>
+		<item>Сортировать по алфавиту ↑</item>
+		<item>Сортировать по дате архивирования ↓</item>
+		<item>Сортировать по дате архивирования ↑</item>
+		<item>Сортировать по цвету</item>
+    </string-array>
+    
+    <string-array name="sortRecycleNotesMethods">
+		<item>Сортировать по дате создания ↓</item>
+		<item>Сортировать по дате создания ↑</item>
+		<item>Сортировать по дате удаления ↓</item>
+		<item>Сортировать по дате удаления ↑</item>
+    </string-array>
+    
+
+</resources>

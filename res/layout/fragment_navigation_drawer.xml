@@ -1,0 +1,179 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="su.fapsi.enotes.NavigationDrawerFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/llFragmentNavigation"
+    android:background="#e3e3e3"
+    android:choiceMode="singleChoice" >
+
+    <LinearLayout
+        android:id="@+id/llFnNotes"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/base_padding"
+        android:layout_weight="0.12"
+        android:background="#a3a3a3"
+        android:clickable="true"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/ivFnNotes"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/base_padding"
+            android:layout_weight="0.15"
+            android:scaleType="fitCenter"
+            android:src="@drawable/note_ico" />
+
+        <TextView
+            android:id="@+id/tvFnNotes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/base_padding"
+            android:layout_weight="0.85"
+            android:gravity="center_vertical"
+            android:text="@string/notes_activity"
+            android:textSize="@dimen/base_title" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/llFnArchive"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/base_padding"
+        android:layout_weight="0.12"
+        android:background="#a3a3a3"
+        android:clickable="true"
+        android:orientation="horizontal" >
+        
+        <ImageView
+            android:id="@+id/ivFnArchive"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/base_padding"
+            android:layout_weight="0.15"
+            android:scaleType="fitCenter"
+            android:src="@drawable/archive_ico" />
+
+        <TextView
+            android:id="@+id/tvFnArchive"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/base_padding"
+            android:layout_weight="0.85"
+            android:gravity="center_vertical"
+            android:text="@string/archive_activity"
+            android:textSize="@dimen/base_title" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/llFnRecycle"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.12"
+        android:orientation="horizontal"
+        android:clickable="true"
+        android:background="#a3a3a3"
+        android:layout_margin="@dimen/base_padding" >
+        
+        <ImageView
+            android:id="@+id/ivFnRecycle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/base_padding"
+            android:layout_weight="0.15"
+            android:scaleType="fitCenter"
+            android:src="@drawable/recycle_ico" />
+
+        <TextView
+            android:id="@+id/tvFnRecycle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/base_padding"
+            android:layout_weight="0.85"
+            android:gravity="center_vertical"
+            android:text="@string/recycle_activity"
+            android:textSize="@dimen/base_title" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/llFnSearch"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.12"
+        android:orientation="horizontal"
+        android:clickable="true"
+        android:background="#a3a3a3"
+        android:layout_margin="@dimen/base_padding" >
+        
+        <ImageView
+            android:id="@+id/ivFnSearch"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/base_padding"
+            android:layout_weight="0.15"
+            android:scaleType="fitCenter"
+            android:src="@drawable/search_ico" />
+
+        <TextView
+            android:id="@+id/tvFnSearch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/base_padding"
+            android:layout_weight="0.85"
+            android:gravity="center_vertical"
+            android:text="@string/search_activity"
+            android:textSize="@dimen/base_title" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/llFnSettings"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.12"
+        android:orientation="horizontal"
+        android:clickable="true"
+        android:background="#a3a3a3"
+        android:layout_margin="@dimen/base_padding" >
+        
+        <ImageView
+            android:id="@+id/ivFnSettings"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/base_padding"
+            android:layout_weight="0.15"
+            android:scaleType="fitCenter"
+            android:src="@drawable/settings_ico" />
+
+        <TextView
+            android:id="@+id/tvFnSettings"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/base_padding"
+            android:layout_weight="0.85"
+            android:gravity="center_vertical"
+            android:text="@string/settings_activity"
+            android:textSize="@dimen/base_title" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/llFnNullLL"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.40"
+        android:orientation="horizontal"
+        android:clickable="true" >
+	</LinearLayout>
+
+</LinearLayout>

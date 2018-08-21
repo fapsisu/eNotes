@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlEditActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+           
+        <ScrollView
+        android:id="@+id/sv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            
+            <LinearLayout
+                android:id="@+id/llTitleLayout"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="0.15"
+                android:orientation="horizontal" >
+            
+				<EditText
+				    android:id="@+id/tvTitleNote"
+				    android:layout_width="0dp"
+				    android:layout_height="match_parent"
+				    android:layout_weight="0.8"
+				    android:editable="false"
+				    android:ellipsize="end"
+				    android:ems="3"
+				    android:gravity="left|center_vertical"
+				    android:inputType="none"
+				    android:lines="1"
+				    android:maxLines="1"
+				    android:padding="3dp"
+				    android:singleLine="true"
+				    android:textIsSelectable="true"
+				    android:textSize="@dimen/base_title"
+				    android:textColorHighlight="#909090" 
+				    android:visibility="gone" />
+
+        		<EditText
+        		    android:id="@+id/etTitleNote"
+        		    android:layout_width="0dp"
+        		    android:layout_height="match_parent"
+        		    android:layout_weight="0.8"
+        		    android:ellipsize="end"
+        		    android:ems="3"
+        		    android:gravity="left|center_vertical"
+        		    android:inputType="textCapSentences"
+        		    android:lines="1"
+        		    android:maxLines="18"
+        		    android:padding="@dimen/base_padding"
+        		    android:singleLine="true"
+        		    android:textSize="@dimen/base_title"
+        		    android:textColorHighlight="#909090" />
+
+        		<LinearLayout
+            		android:layout_width="0dp"
+            		android:layout_weight="0.2"
+            		android:layout_height="match_parent"
+            		android:padding="@dimen/base_padding" >
+
+            		<Button
+            		    android:id="@+id/btnSelectColor"
+            		    android:layout_width="wrap_content"
+            		    android:layout_height="wrap_content"
+            		    android:layout_gravity="center_vertical|center_horizontal"
+            		    android:onClick="onClick" />
+
+        		</LinearLayout>
+    		</LinearLayout>
+
+    		<LinearLayout
+    		    android:id="@+id/llDateLayout"
+        		android:layout_width="match_parent"
+        		android:layout_height="0dp"
+        		android:layout_weight="0.12"
+        		android:orientation="horizontal"
+        		android:layout_marginBottom="1dp" >
+        		
+    		    <ImageView
+    		        android:layout_width="14dp"
+    		        android:layout_height="14dp"
+    		        android:layout_gravity="center_vertical|center_horizontal"
+    		        android:layout_weight="0.03"
+    		        android:scaleType="fitCenter"
+    		        android:src="@android:drawable/ic_menu_save" />
+
+    			<TextView
+    			    android:id="@+id/tvDateCreated"
+    			    android:layout_width="0dp"
+    			    android:layout_height="wrap_content"
+    			    android:layout_gravity="center_vertical"
+    			    android:layout_weight="0.47"
+    			    android:gravity="left|center_vertical"
+    			    android:padding="1dp"
+    			    android:textSize="@dimen/note_view_date"
+    			    android:textColorHighlight="#909090" />
+    			
+    			<ImageView
+    			    android:layout_width="14dp"
+    			    android:layout_height="14dp"
+    			    android:layout_gravity="center_vertical|center_horizontal"
+    			    android:layout_weight="0.03"
+    			    android:scaleType="fitCenter"
+    			    android:src="@android:drawable/ic_menu_edit" />
+
+    			<TextView
+    			    android:id="@+id/tvDateLastEdition"
+    			    android:layout_width="0dp"
+    			    android:layout_height="wrap_content"
+    			    android:layout_gravity="center_vertical"
+    			    android:layout_weight="0.47"
+    			    android:gravity="left|center_vertical"
+    			    android:padding="1dp"
+    			    android:textSize="@dimen/note_view_date"
+    			    android:textColorHighlight="#909090" />
+
+			</LinearLayout>
+
+    		<LinearLayout
+    		    android:id="@+id/llTextLayout"
+    		    android:layout_width="match_parent"
+    		    android:layout_height="0dp"
+        		android:layout_weight="0.73"
+    		    android:orientation="horizontal" >
+
+    		    <EditText
+    		        android:id="@+id/tvTextNote"
+    		        android:layout_width="match_parent"
+    		        android:layout_height="match_parent"
+    		        android:editable="false"
+    		        android:inputType="none"
+    		        android:padding="@dimen/base_padding"
+    		        android:textIsSelectable="true"
+    		        android:textSize="@dimen/base_text"
+    		        android:visibility="gone"
+    		        android:textColorHighlight="#909090" />
+
+    		    <EditText
+    		        android:id="@+id/etTextNote"
+    		        android:layout_width="match_parent"
+    		        android:layout_height="wrap_content"
+    		        android:gravity="left"
+    		        android:inputType="textCapSentences|textMultiLine"
+    		        android:padding="@dimen/base_padding"
+    		        android:textSize="@dimen/base_text"
+    		        android:textColorHighlight="#909090" >
+
+    		    </EditText>
+    		</LinearLayout>
+		
+		</LinearLayout>
+	</ScrollView>
+</RelativeLayout>

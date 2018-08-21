@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <color name="col0">#ff0000</color>
+    <color name="col1">#00ff00</color>
+    <color name="col2">#0000ff</color>
+    <color name="col3">#00ffff</color>
+    <color name="col4">#ffff00</color>
+    <color name="col5">#ff00ff</color>
+    <color name="col6">#ffa500</color>
+    <color name="col7">#A9A9A9</color>
+    <color name="col8">#ffffff</color>
+    
+    <color name="col1_0">#CC4E5C</color>
+    <color name="col1_1">#00BF00</color>
+    <color name="col1_2">#1E90FF</color>
+    <color name="col1_3">#00a6a6 </color>
+    <color name="col1_4">#F0E68C</color>
+    <color name="col1_5">#DA70D6</color>
+    <color name="col1_6">#FF8C00</color>
+    <color name="col1_7">#C0C0C0</color>
+    <color name="col1_8">#FFE4E1</color>
+    
+    <color name="col2_0">#e34234</color>
+    <color name="col2_1">#7FFF00</color>
+    <color name="col2_2">#87CEFA</color>
+    <color name="col2_3">#8dfbfb</color>
+    <color name="col2_4">#FFFACD</color>
+    <color name="col2_5">#DDA0DD</color>
+    <color name="col2_6">#FF7F50</color>
+    <color name="col2_7">#d3d3d3</color>
+    <color name="col2_8">#ffffff</color>
+    
+    <color name="checkItemMenu">#404040</color>
+    
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="su.fapsi.enotes.NotesListActivity" >
+    
+    
+    <item
+        android:id="@+id/NoteSearch"
+        android:orderInCategory="100"
+       	android:icon="@android:drawable/ic_menu_search"
+        android:showAsAction="always"/>
+    
+      <item
+        android:id="@+id/NoteAdd"
+        android:orderInCategory="100"
+        android:icon="@android:drawable/ic_menu_add"
+        android:showAsAction="always" />
+     
+</menu>
