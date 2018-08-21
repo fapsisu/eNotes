@@ -119,7 +119,7 @@ public final class R {
         public static final int ivFnSearch=0x7f0a001a;
         public static final int ivFnSettings=0x7f0a001d;
         public static final int ivNoteEncryptIcoItem=0x7f0a0030;
-        public static final int ivNoteRecyclerIcoItem=0x7f0a002f;
+        public static final int ivNoteOtherIcoItem=0x7f0a002f;
         public static final int llAbout=0x7f0a0049;
         public static final int llChoiceColor=0x7f0a0004;
         public static final int llDateLayout=0x7f0a0026;
